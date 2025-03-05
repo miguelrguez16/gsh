@@ -10,5 +10,6 @@ export type Areas =
   | "legs"
   | "others"
   | "pectorals"
+  | "femorals"
   | "shoulders"
   | "triceps";

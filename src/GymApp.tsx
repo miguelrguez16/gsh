@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useRoutineMock } from "./__mocks__/useRoutineMock";
-import { Exercise } from "./components/exercise";
+import { useRoutineData } from "./__mocks__/useRoutineMock";
+import { Exercise } from "./components";
 import { Rutine } from "./types/rutine.type";
 
 export const GymApp = () => {
-  const data = useRoutineMock();
+  const data = useRoutineData();
   const [selectedRoutine, setSelectedRoutine] = useState<Rutine | null>(
     data[0]
   );

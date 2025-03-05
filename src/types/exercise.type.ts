@@ -5,6 +5,5 @@ export interface IExercise {
   area: Areas;
   notes?: string;
   image?: string;
-  equipment?: string;
   number: number;
 }
