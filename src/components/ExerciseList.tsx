@@ -11,7 +11,9 @@ export const ExerciseList = () => {
     <List>
       {selectedRoutine?.exercises.map((exercise) => (
         <Card key={exercise.number + exercise.name}>
-          <Typography level="title-lg">{exercise.name}</Typography>
+          <Typography level="title-lg">
+            {exercise.name} {exercise.done?.valueOf() ? "✅" : "❌"}
+          </Typography>
           <img
             src={exercise?.image}
             style={
