@@ -6,19 +6,15 @@ export const Exercise: React.FC<IExercise> = ({
   area,
   notes,
   image,
-  equipment,
   number,
 }) => {
   return (
-    <li key={name} style={{ height: "100vdh" }}>
-      <div style={{ height: "100vdh", padding: "1rem" }}>
-        <h1> {`${name} (${number})`}</h1>
-        {image && <ImageWithLoading src={image} alt={name} />}
-        <p>{area}</p>
-        <p>{equipment}</p>
-        <p>{notes}</p>
-        <p>{number}</p>
-      </div>
-    </li>
+    <>
+      <h1> {`${name} (${number})`}</h1>
+      {image && <ImageWithLoading src={image} alt={name} />}
+      <p>{area}</p>
+      <p>{notes}</p>
+      <p>{number}</p>
+    </>
   );
 };

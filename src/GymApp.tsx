@@ -1,50 +1,39 @@
-import { useState } from "react";
-import { useRoutineData } from "./__mocks__/useRoutineMock";
-import { Exercise } from "./components";
-import { Rutine } from "./types/rutine.type";
+import { Button, Typography } from "@mui/material";
+import { ExerciseList } from "./components/ExerciseList";
+import { useExerciseStore } from "./store/useExerciseStore";
 
 export const GymApp = () => {
-  const data = useRoutineData();
-  const [selectedRoutine, setSelectedRoutine] = useState<Rutine | null>(
-    data[0]
-  );
-
+  const { routines, selectRoutine, selectedRoutine } = useExerciseStore();
   return (
-    <div style={{ height: "100vdh" }}>
-      {selectedRoutine && (
-        <div>
-          <h1>{selectedRoutine.name}</h1>
-          <ul>
-            {selectedRoutine.exercises.map((exercise) => (
-              <Exercise key={exercise.name} {...exercise} />
-            ))}
-          </ul>
-        </div>
-      )}
+    <main style={{ height: "100dvh" }}>
+      <Typography variant="h3" align="center">
+        Gym App
+      </Typography>
+      <p>Selected routine {selectedRoutine?.routineName}</p>
+      <ExerciseList />
       <div
         style={{
           position: "fixed",
           bottom: 0,
           display: "flex",
-          alignContent: "center",
-          width: "100dvw",
+          flexDirection: "row",
           justifyContent: "space-around",
+          alignItems: "center",
+          width: "100%",
+          gap: "10px",
+          padding: "10px",
         }}
       >
-        {Object.entries(data).map(([key, value]) => (
-          <button
-            key={key}
-            onClick={() => setSelectedRoutine(value)}
-            style={{
-              fontSize: "1.3rem",
-              fontFamily: "Arial",
-              cursor: "pointer",
-            }}
+        {routines.map((routine) => (
+          <Button
+            variant="contained"
+            key={routine.routineName}
+            onClick={() => selectRoutine(routine.routineName)}
           >
-            {value.name}
-          </button>
+            {routine.routineName}
+          </Button>
         ))}
       </div>
-    </div>
+    </main>
   );
 };

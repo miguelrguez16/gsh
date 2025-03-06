@@ -1,10 +1,10 @@
 import { Assets } from "../assets";
 import { Rutine } from "../types/rutine.type";
 
-export const useRoutineData = () => {
-  const data: Rutine[] = [
+export const routinesData: { routines: Rutine[] } = {
+  routines: [
     {
-      name: "blue day",
+      routineName: "blue day",
       numberOfRepeticions: 15,
       numberOfSets: 4,
       duration: 60,
@@ -68,7 +68,27 @@ export const useRoutineData = () => {
       ],
     },
     {
-      name: "red day",
+      routineName: "green day",
+      numberOfRepeticions: 15,
+      numberOfSets: 4,
+      duration: 60,
+      exercises: [
+        {
+          name: "Press Banca",
+          area: "pectorals",
+          image: Assets.NotFound,
+          number: 1,
+        },
+        {
+          name: "Press Banca",
+          area: "pectorals",
+          image: Assets.NotFound,
+          number: 2,
+        },
+      ],
+    },
+    {
+      routineName: "red day",
       numberOfRepeticions: 15,
       numberOfSets: 4,
       duration: 60,
@@ -129,7 +149,5 @@ export const useRoutineData = () => {
         },
       ],
     },
-  ];
-
-  return data;
+  ],
 };
