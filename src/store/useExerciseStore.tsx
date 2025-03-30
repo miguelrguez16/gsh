@@ -9,6 +9,7 @@ interface State {
   selectedRoutine: Rutine | null;
   markAsDone: (exerciseID: number) => void;
   markAsNotDone: (exerciseID: number) => void;
+  restoreData: () => void;
 }
 
 export const useExerciseStore = create<State>()(
@@ -16,9 +17,10 @@ export const useExerciseStore = create<State>()(
     persist(
       (set, get) => {
         return {
+          restoreData: () =>
+            set({ routines: routinesData.routines, selectedRoutine: null }),
           routines: routinesData.routines,
           selectedRoutine: null,
-
           selectRoutine: (r: string) => {
             const { routines } = get();
             const selectedRoutine = routines.find(

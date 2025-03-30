@@ -4,27 +4,83 @@ import { Rutine } from "../types/rutine.type";
 export const routinesData: { routines: Rutine[] } = {
   routines: [
     {
+      routineName: "green day",
+      numberOfRepeticions: 15,
+      numberOfSets: 4,
+      duration: 60,
+      exercises: [
+        {
+          name: "Prensa Discos",
+          area: "piernas",
+          image: Assets.PrensaDiscosLevantar,
+          number: 1,
+        },
+        {
+          name: "HACK_A",
+          area: "piernas",
+          image: Assets.PrensaHack,
+          number: 2,
+        },
+        {
+          name: "Apertura Maquina - Abductores",
+          area: "piernas",
+          image: Assets.AperturaMaquinaPierna,
+          number: 3,
+        },
+        {
+          name: "Cerradura Maquina - Aductores",
+          area: "piernas",
+          image: Assets.AperturaMaquinaPierna,
+          number: 4,
+        },
+        {
+          name: "Extension de Cuadriceps",
+          area: "piernas",
+          image: Assets.LegExtension,
+          number: 5,
+        },
+        {
+          name: "Femorales Acostado",
+          area: "piernas",
+          image: Assets.FemoralesAcostado,
+          number: 6,
+        },
+        {
+          name: "Hip Thrust",
+          area: "piernas",
+
+          number: 7,
+        },
+        {
+          name: "Abdominales Paralelos",
+          area: "abdominales",
+          image: Assets.AbdominalesParalelos,
+          number: 8,
+        },
+      ],
+    },
+    {
       routineName: "blue day",
       numberOfRepeticions: 15,
       numberOfSets: 4,
       duration: 60,
       exercises: [
         {
-          name: "Cruces Polea",
-          area: "pectorals",
-          image: Assets.Cruces,
-          number: 1,
-        },
-        {
           name: "Press Inclinado",
           area: "pectorals",
           image: Assets.PressInclinado,
+          number: 1,
+        },
+        {
+          name: "Cruces Poleas",
+          area: "pectorals",
+          image: Assets.Cruces,
           number: 2,
         },
         {
-          name: "Remo bajo Polea",
-          area: "legs",
-          image: Assets.RemoBajoPolea,
+          name: "Curl Poleas",
+          area: "pectorals",
+          image: Assets.CurlPoleaBiceps,
           number: 3,
         },
         {
@@ -34,56 +90,22 @@ export const routinesData: { routines: Rutine[] } = {
           number: 4,
         },
         {
-          name: "Curl Polea",
-          area: "pectorals",
-
-          image: Assets.CurlPoleaBiceps,
+          name: "Lumbares",
+          area: "espalda",
+          videoSrc: "PicwGUbAjb4",
           number: 5,
         },
         {
-          name: "Extensiones Maquina Cuadriceps",
-          area: "legs",
-
-          image: Assets.LegExtension,
+          name: "Press Frances",
+          area: "triceps",
+          image: Assets.PressFrances,
           number: 6,
         },
         {
-          name: "Sentadillas Sissy",
-          area: "legs",
-          image: Assets.SentadillasSissy,
-          number: 7,
-        },
-        {
-          name: "Femorales Acostado",
-          area: "femorals",
-          image: Assets.FemoralesAcostado,
-          number: 8,
-        },
-        {
           name: "Abdominales Paralelos",
-          area: "abdominals",
+          area: "abdominales",
           image: Assets.AbdominalesParalelos,
-          number: 9,
-        },
-      ],
-    },
-    {
-      routineName: "green day",
-      numberOfRepeticions: 15,
-      numberOfSets: 4,
-      duration: 60,
-      exercises: [
-        {
-          name: "Press Banca",
-          area: "pectorals",
-          image: Assets.NotFound,
-          number: 1,
-        },
-        {
-          name: "Press Banca",
-          area: "pectorals",
-          image: Assets.NotFound,
-          number: 2,
+          number: 7,
         },
       ],
     },
@@ -94,58 +116,37 @@ export const routinesData: { routines: Rutine[] } = {
       duration: 60,
       exercises: [
         {
-          name: "prensa discos levantar",
-          area: "pectorals",
-          image: Assets.PrensaDiscosLevantar,
+          name: "Pull face",
+          area: "espalda",
+
           number: 1,
         },
         {
-          name: "prensa espalda",
-          area: "legs",
-          image: Assets.PrensaEspalda,
+          name: "Elevaciones Laterales",
+          area: "hombros",
+
           number: 2,
         },
         {
-          name: "Apertura Maquina Pierna",
-          area: "legs",
-          image: Assets.AperturaMaquinaPierna,
+          name: "Press Arnold",
+          area: "hombros",
+
           number: 3,
         },
         {
-          name: "Press con maquina",
-          area: "legs",
-          image: Assets.PressMaquina,
+          name: "Gemelos",
+          area: "piernas",
           number: 4,
         },
         {
-          name: "Curl Pecho Polea",
-          area: "pectorals",
-          image: Assets.NotFound,
+          name: "Jalon al pecho polea alta",
+          area: "espalda",
           number: 5,
         },
         {
-          name: "Press Frances",
-          area: "triceps",
-          image: Assets.PressFrances,
+          name: "Abdinales o Lumbares",
+          area: "abdominales",
           number: 6,
-        },
-        {
-          name: "Tirones Polea Triceps",
-          area: "triceps",
-          image: Assets.TironesPoleaTrices,
-          number: 7,
-        },
-        {
-          name: "Curl con Barra Z",
-          area: "abdominals",
-          image: Assets.CurlBarraZ,
-          number: 8,
-        },
-        {
-          name: "Lumbares",
-          area: "abdominals",
-          image: Assets.NotFound,
-          number: 9,
         },
       ],
     },

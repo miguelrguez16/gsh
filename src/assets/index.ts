@@ -8,7 +8,7 @@ import JalonPecho from "./jalon-pecho.webp";
 import LegExtension from "./leg-extension-800.webp";
 import NotFound from "./notFound.webp";
 import PrensaDiscosLevantar from "./prensa-discos-levantar.webp";
-import PrensaEspalda from "./prensa-espalda.webp";
+import PrensaHack from "./prensa-hack.webp";
 import PressFrances from "./press-frances.webp";
 import PressInclinado from "./press-inclinado.webp";
 import PressMaquina from "./press-maquina.webp";
@@ -31,7 +31,7 @@ export const Assets = {
   FemoralesAcostado,
   AbdominalesParalelos,
   PrensaDiscosLevantar,
-  PrensaEspalda,
+  PrensaHack,
   PressMaquina,
   AperturaMaquinaPierna,
 };

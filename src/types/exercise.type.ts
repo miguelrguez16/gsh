@@ -3,6 +3,7 @@ export type IExercise = {
   area: string;
   notes?: string;
   image?: string;
+  videoSrc?: string;
   number: number;
   done?: boolean;
 };
