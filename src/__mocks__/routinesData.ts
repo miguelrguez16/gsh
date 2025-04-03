@@ -4,7 +4,7 @@ import { Rutine } from "../types/rutine.type";
 export const routinesData: { routines: Rutine[] } = {
   routines: [
     {
-      routineName: "green day",
+      routineName: "Black",
       numberOfRepeticions: 15,
       numberOfSets: 4,
       duration: 60,
@@ -60,7 +60,7 @@ export const routinesData: { routines: Rutine[] } = {
       ],
     },
     {
-      routineName: "blue day",
+      routineName: "Green",
       numberOfRepeticions: 15,
       numberOfSets: 4,
       duration: 60,
@@ -110,7 +110,7 @@ export const routinesData: { routines: Rutine[] } = {
       ],
     },
     {
-      routineName: "red day",
+      routineName: "purple",
       numberOfRepeticions: 15,
       numberOfSets: 4,
       duration: 60,
@@ -144,9 +144,122 @@ export const routinesData: { routines: Rutine[] } = {
           number: 5,
         },
         {
-          name: "Abdinales o Lumbares",
+          name: "Abdominales o Lumbares",
           area: "abdominales",
           number: 6,
+        },
+        {
+          name: "Plancha",
+          area: "abdominales",
+          image: Assets.NotFound,
+          number: 7,
+        },
+      ],
+    },
+    {
+      routineName: "Blue Routine",
+      numberOfRepeticions: 15,
+      numberOfSets: 4,
+      duration: 60,
+      exercises: [
+        {
+          name: "Cruces",
+          area: "pectorals",
+          number: 1,
+        },
+        {
+          name: "PRESS INCLINADO (multyPower)",
+          area: "piernas",
+          number: 2,
+        },
+        {
+          name: "EMO BAJO POLEA  (con la pala -> ^)",
+          area: "piernas",
+          number: 3,
+        },
+        {
+          name: "JALON PECHO-> poner los codos hacia delante",
+          area: "piernas",
+          number: 4,
+        },
+        {
+          name: "CURL CON POLEA (biceps) pecho hacia afuera",
+          area: "piernas",
+          number: 5,
+        },
+        {
+          name: "EXTENSIONES MAQUINA -> cuadriceps",
+          area: "piernas",
+          number: 6,
+        },
+        {
+          name: "SENTADILLAS (PLACA)",
+          area: "piernas",
+
+          number: 7,
+        },
+        {
+          name: "FEMORALES ACOSTADO",
+          area: "abdominales",
+          number: 8,
+        },
+        {
+          name: "ABDOMINALES",
+          area: "abdominales",
+          number: 9,
+        },
+      ],
+    },
+    {
+      routineName: "RED ROUTINE",
+      numberOfRepeticions: 15,
+      numberOfSets: 4,
+      duration: 60,
+      exercises: [
+        {
+          name: "PRENSA DISCOS",
+          area: "espalda",
+          number: 1,
+        },
+        {
+          name: "HACKA",
+          area: "hombros",
+          number: 2,
+        },
+        {
+          name: "APERTURA MAQUINA ->  Cerrar",
+          area: "hombros",
+          number: 3,
+        },
+        {
+          name: "PRESS MAQUINA DISCOS",
+          area: "piernas",
+          number: 4,
+        },
+        {
+          name: "PRESS AL PECHO POLEA",
+          area: "espalda",
+          number: 5,
+        },
+        {
+          name: "PRESS FRANCES",
+          area: "abdominales",
+          number: 6,
+        },
+        {
+          name: "TIRONES POLEA triceps",
+          area: "abdominales",
+          number: 7,
+        },
+        {
+          name: "CURL CON BARRA -> 'Z'",
+          area: "abdominales",
+          number: 8,
+        },
+        {
+          name: "Lumbares",
+          area: "abdominales",
+          number: 8,
         },
       ],
     },
