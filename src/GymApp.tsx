@@ -18,11 +18,9 @@ export const GymApp = () => {
               {routine.routineName}
             </Button>
           ))}
-          {process.env.NODE_ENV === "development" && (
-            <Button variant="contained" onClick={restoreData}>
-              RESET
-            </Button>
-          )}
+          <Button variant="contained" onClick={restoreData}>
+            RESET
+          </Button>
         </ButtonGroup>
       </section>
     </main>
